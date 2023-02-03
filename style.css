@@ -239,4 +239,9 @@ body {
     grid-column: col / span 2;
     grid-row: row;
   }
+
+  .title-article{
+    font-size: 1rem;
+    padding: 0.5px ;
+  }
 }
