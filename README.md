@@ -18,7 +18,7 @@
 
 Welcome to my tribute to the late, great Kobe Bryant - one of the most iconic and inspiring basketball players of all time. This site is dedicated to honoring the life and legacy of the Black Mamba, whose passion and drive pushed him to reach incredible heights on the court and off. From his early years to his 20-year career with the Los Angeles Lakers, Kobe's unwavering commitment to excellence has inspired countless fans and athletes around the world. Here, you'll find an extensive collection of photos, videos, and articles that showcase his remarkable achievements, impact on the game of basketball, and lasting influence on those he inspired.
 
-### Visit my Website
+### Visit my Project
 https://week3.okky.me/ 
 
 
