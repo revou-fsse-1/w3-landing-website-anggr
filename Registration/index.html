@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a fan</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-logo">
+        <a href="#">Kobe</a>
+      </div>
+      <!-- hamburger menu start -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <!-- hamburger menu end -->
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Story</a></li>
+          <li><a href="#contacts">Regis</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="box-container">
+      <div class="container-content">
+        <div class="title">Become a Fan</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input
+                  type="text"
+                  placeholder="Confirm your password"
+                  required />
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1" />
+                <input type="radio" name="gender" id="dot-2" />
+                <input type="radio" name="gender" id="dot-3" />
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

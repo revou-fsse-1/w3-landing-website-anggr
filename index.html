@@ -4,26 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kobe Bryant</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
+    <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- navbar Start -->
-    <!-- <nav class="container navbar">
-      <div class="logo">Okky</div>
-      <div class="menu">
-        <a a href="#homepage">Life</a>
-        <a a href="#about">Career</a>
-        <a a href="#about">Story</a>
+    <nav class="navbar">
+      <div class="brand-logo">
+        <a href="#">Kobe</a>
       </div>
-    </nav> -->
-    <!-- Navbar End -->
-    <!-- Hero Section Start -->
+      <!-- hamburger menu start -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <!-- hamburger menu end -->
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Story</a></li>
+          <li><a href="#contacts">Regis</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--! Hero Section Start -->
     <section class="hero-section">
       <div class="hero-container">
         <!--  Hero Text  -->
@@ -31,7 +42,7 @@
           <h1>Kobe Bryant</h1>
           <h2 class="hero-title">
             Greatest <br />
-            Of all time
+            of all time
           </h2>
           <p>1978-2020</p>
         </div>
@@ -39,7 +50,7 @@
         <!--  Hero Image  -->
         <div class="hero-image">
           <img
-            src="/Assets/kobe-bryant-wallpaper.webp"
+            src="/Assets/kobe-bryant-wallpaper.png"
             width="100%"
             height="100%" />
           <!-- todo: make a button or delete -->
@@ -47,8 +58,9 @@
         </div>
       </div>
     </section>
-    <!-- Hero Section End -->
-    <!-- video section start -->
+    <!--!! Hero Section End -->
+
+    <!--!! video section start -->
     <section class="video-section">
       <div class="container-video">
         <h1>Story</h1>
@@ -67,7 +79,56 @@
         </p>
       </div>
     </section>
-    <!-- video section end -->
+    <!--!! video section end -->
 
+    <!--!! image galery start -->
+    <div class="container-gallery">
+      <div class="content-title">
+        <h2>Gallery</h2>
+      </div>
+      <div class="content-gallery">
+        <a href="https://media.giphy.com/media/JJ0f57S94Ujyo/giphy.gif">
+          <img src="https://media.giphy.com/media/JJ0f57S94Ujyo/giphy.gif" />
+        </a>
+
+        <a
+          href="https://media.giphy.com/media/3ohfFBBJORvhCBHwPK/giphy.gif"
+          class="vertical">
+          <img
+            src="https://media.giphy.com/media/3ohfFBBJORvhCBHwPK/giphy.gif" />
+        </a>
+
+        <a href="https://media.giphy.com/media/UYlu2EDUdiVl6/giphy.gif">
+          <img src="https://media.giphy.com/media/UYlu2EDUdiVl6/giphy.gif" />
+        </a>
+
+        <a
+          href="https://media.giphy.com/media/26ufm9YcCl3Cb7dwk/giphy.gif"
+          class="big">
+          <img
+            src="https://media.giphy.com/media/26ufm9YcCl3Cb7dwk/giphy.gif" />
+        </a>
+
+        <a href="https://media.giphy.com/media/12Tob44HkDJty8/giphy.gif">
+          <img src="https://media.giphy.com/media/12Tob44HkDJty8/giphy.gif" />
+        </a>
+
+        <a
+          href="https://media.giphy.com/media/l0HlE1npjKjNknk6k/giphy.gif"
+          class="vertical">
+          <img
+            src="https://media.giphy.com/media/l0HlE1npjKjNknk6k/giphy.gif" />
+        </a>
+
+        <a href="https://media.giphy.com/media/l0MYHsOst13OLqPcI/giphy.gif">
+          <img
+            src="https://media.giphy.com/media/l0MYHsOst13OLqPcI/giphy.gif" />
+        </a>
+      </div>
+    </div>
+
+    <!--!! image galery end -->
+
+    <script src="./app.js"></script>
   </body>
 </html>

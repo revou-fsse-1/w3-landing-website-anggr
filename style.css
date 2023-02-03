@@ -1,10 +1,116 @@
 body {
   margin: 0px;
   background-color: #232148;
+
   color: white;
   font-family: poppins;
 }
 
+/* !!navbar */
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232148;
+  color: white;
+  z-index: 99;
+}
+
+.brand-logo {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.brand-logo a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #feba12;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* !!Navbar End */
+
+/* !!hero start */
+.hero-section {
+  min-height: 100vh;
+}
 .hero-container {
   display: grid;
   max-width: 640px;
@@ -36,94 +142,6 @@ body {
   font-size: 5rem;
   position: relative;
 }
-/* h2 {
-  position: relative;
-}
-
-
-h2::before {
-  background: #feba12;
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-in-out;
-  z-index: -1;
-}
-
-h2:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-} */
-
-button {
-  padding: 1rem;
-  border-radius: 0;
-  color: black;
-  font-weight: bold;
-  background-color: white;
-}
-
-/* navbar */
-nav.container {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 12px 5%;
-  background-color: #232148;
-  z-index: 99;
-}
-
-.logo {
-  font-size: 2rem;
-  color: white;
-  display: block;
-}
-
-nav.container a {
-  color: white;
-  text-decoration: none;
-  margin: 5px 5px;
-  padding: 5px 10px;
-  position: relative;
-  cursor: pointer;
-}
-
-/* Top and Bottom borders hover */
-nav.navbar a:before,
-nav.navbar a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: white;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-nav.navbar a:before {
-  top: 0px;
-  transform: translateY(-10px);
-}
-
-nav.navbar a:after {
-  bottom: 0px;
-  transform: translateY(10px);
-}
-
-nav.navbar a:hover:before,
-nav.navbar a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-/* Navbar End */
 
 .container-video {
   min-height: 100vh;
@@ -131,7 +149,7 @@ nav.navbar a:hover:after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #FEBA12;
+  background-color: #feba12;
   color: #232148;
 }
 
@@ -147,6 +165,60 @@ nav.navbar a:hover:after {
   text-align: center;
 }
 
+/* !! image galery start */
+.container-gallery {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #232148;
+  color: white;
+}
+.content-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.content-gallery {
+  --gap: 1rem;
+  --width: 300px;
+  --height: 200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.content-gallery > a > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-gallery {
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--width), auto-fit));
+  grid-auto-rows: var(--height);
+  grid-auto-flow: dense;
+}
 
+.horizontal {
+  grid-column: span 2;
+}
 
+.vertical {
+  grid-row: span 2;
+}
 
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/*!! image galery end */
+
+iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800;
+  max-height: 450;
+}
