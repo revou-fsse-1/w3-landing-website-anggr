@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   background-color: #232148;
-
+  scroll-behavior: smooth;
   color: white;
   font-family: poppins;
 }
